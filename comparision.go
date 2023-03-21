@@ -1,7 +1,7 @@
-package main;
-import "fmt";
+package main
+import "fmt"
 
 func main(){
-	fmt.Println(15 == 15);
-	fmt.Println(15 == 15);
+	fmt.Println(15 == 15)
+	fmt.Println(15 == 15)
 }

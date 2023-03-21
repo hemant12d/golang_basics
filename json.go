@@ -1,9 +1,9 @@
-package main;
+package main
 
 import (
 	"encoding/json"
 	"fmt"
-);
+)
 
 // Declare struct
 type Dev struct {
@@ -14,23 +14,23 @@ type Dev struct {
 func main()  {
 
 	// Json string response
-	sFrom := `{"name":"hemant","age":2}`
+	strDevData := `{"name":"hemant","age":2}`
 	//fmt.Println(sFrom)
 
-	var dev_1 Dev;
+	var devDetails Dev
 
-	err := json.Unmarshal([]byte(sFrom), &dev_1);
+	err := json.Unmarshal([]byte(strDevData), &devDetails)
 	if err != nil {
 		fmt.Println(err)
 	}
-	fmt.Println(dev_1);
+	fmt.Println(devDetails)
 
-	sto, err := json.Marshal(dev_1);
+	sto, err := json.Marshal(devDetails)
 
 	if err != nil {
-		fmt.Println(err);
+		fmt.Println(err)
 	}
 	fmt.Println(sto)
-	fmt.Printf("%T\n", sto);
+	fmt.Printf("%T\n", sto)
 	fmt.Printf("%s\n", sto)
 }

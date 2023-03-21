@@ -1,6 +1,6 @@
 package main
 
-import "fmt";
+import "fmt"
 
 func myfunc(ch chan int) {
 	fmt.Println(20 + <-ch)
@@ -8,7 +8,7 @@ func myfunc(ch chan int) {
 
 
 func myFuncCharChan(mychnl chan string) {
-	for v := 0; v < 4; v++ {
+	for v := 0 v < 4 v++ {
 		mychnl <- "Developer "
 	}
 	close(mychnl)

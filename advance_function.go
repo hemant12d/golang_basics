@@ -1,11 +1,11 @@
-package main;
+package main
 
 import "fmt"
 
 func main() {
-	fmt.Println("Hello World");
+	fmt.Println("Hello World")
 	fmt.Printf("%T\n", returnParam)
-	fmt.Printf("%T\n", invokeParam(7, returnParam));
+	fmt.Printf("%T\n", invokeParam(7, returnParam))
 }
 
 
@@ -13,9 +13,9 @@ func main() {
 
 // Helper function
 func returnParam(val int) int {
-	return val;
+	return val
 }
 
 func invokeParam(val int, f func(int) int)int{
-	return f(val);
-};
+	return f(val)
+}
