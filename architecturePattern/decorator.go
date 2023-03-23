@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"log"
 )
 
 
@@ -38,5 +39,11 @@ func main(){
 	// Calculate the approximatation of PI
 	//fmt.Println(PI(10000))
 	//fmt.Println(PI(50000))
-	fmt.Println()
+	fmt.Println("Starting...");
+	log.Println("Hello world!");
+	log.Println("Server crashed :( ")
+	log.Println("Server got restarted :) ");
+
 }
+
+//When using a file that has long lines, we can prevent horizontal scrolling by using soft-wrap. Let's use Find Action to enable soft-wrap. Press ⇧⌘A (on Mac) or Control+Shift+A (on Windows/Linux) to open the Find Action dialog, and search for "soft-wrap".

@@ -1,0 +1,9 @@
+INFO: 2023/03/22 00:14:41 logs.go:49: Something noteworthy happened
+WARNING: 2023/03/22 00:14:41 logs.go:50: There is something you should know about
+ERROR: 2023/03/22 00:14:41 logs.go:51: Something went wrong
+INFO: 2023/03/22 00:15:18 logs.go:49: Something noteworthy happened
+WARNING: 2023/03/22 00:15:18 logs.go:50: There is something you should know about
+ERROR: 2023/03/22 00:15:18 logs.go:51: Something went wrong
+INFO: 2023/03/22 00:15:22 logs.go:49: Something noteworthy happened
+WARNING: 2023/03/22 00:15:22 logs.go:50: There is something you should know about
+ERROR: 2023/03/22 00:15:22 logs.go:51: Something went wrong
