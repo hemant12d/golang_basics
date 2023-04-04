@@ -2,6 +2,10 @@ module go_basics
 
 go 1.18
 
-require github.com/sirupsen/logrus v1.9.0
+require github.com/go-ozzo/ozzo-validation/v4 v4.3.0
 
-require golang.org/x/sys v0.0.0-20220715151400-c0bba94af5f8 // indirect
+require (
+	github.com/asaskevich/govalidator v0.0.0-20200108200545-475eaeb16496 // indirect
+	github.com/davecgh/go-spew v1.1.1 // indirect
+	github.com/stretchr/testify v1.7.0 // indirect
+)
