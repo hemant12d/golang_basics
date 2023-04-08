@@ -23,7 +23,7 @@ func (u *User) validateUser() error{
 	result := validation.ValidateStruct(u,
 		validation.Field(&u.Name, validation.Required),
 		validation.Field(&u.Email, validation.Required),
-		validation.Field(&u.Username, validation.Required),
+		validation.Field(&u.Username, validation.Required, validation.Length(10, 100)),
 		validation.Field(&u.Gender, validation.Required, validation.In(Male, Female)),
 	)
 
@@ -34,7 +34,7 @@ func (u *User) validateUser() error{
 func main(){
 	// User Data
 	user := &User{
-		Name: "Hemant Soni", Email: "hsonian@gmail.com", Username: "user_name", Gender: "male",
+		Name: "Hemant Soni", Email: "hsonian@gmail.com", Username: "hemant__soni", Gender: "male",
 	}
 
 	// Validation function
