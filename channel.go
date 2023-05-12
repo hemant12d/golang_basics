@@ -8,7 +8,7 @@ func myfunc(ch chan int) {
 
 
 func myFuncCharChan(mychnl chan string) {
-	for v := 0 v < 4 v++ {
+	for i := 0; i < 4; i++ {
 		mychnl <- "Developer "
 	}
 	close(mychnl)
@@ -18,9 +18,9 @@ func myFuncCharChan(mychnl chan string) {
 func main() {
 
 	// Creating a channel
-	//var mychannel chan int
-	//fmt.Println("Value of the channel: ", mychannel)
-	//fmt.Printf("Type of the channel: %T \n", mychannel)
+	var mychannel chan int
+	fmt.Println("Value of the channel: ", mychannel)
+	fmt.Printf("Type of the channel: %T \n", mychannel)
 
 
 	// Creating a channel using make() function
@@ -40,7 +40,7 @@ func main() {
 
 	// Creating a channel with string
 	charChannel := make(chan string)
-	//go myFuncCharChan(charChannel) // calling go routine
+	go myFuncCharChan(charChannel) // calling go routine
 
 	// Anonymous go routine
 	go func() {
@@ -55,17 +55,17 @@ func main() {
 	// Finding capacity and length of the channel
 	fmt.Println("Capacity of the channel is: ", cap(charChannel))
 	fmt.Println("Length of the channel is: ", len(charChannel))
-
-
-	// Iterating over the channel
-	for {
-		res, ok := <-charChannel
-		if ok == false {
-			fmt.Println("Channel Close ", ok)
-			break
-		}
-		fmt.Println("Channel Open ", res, ok)
-	}
+	//
+	//
+	//// Iterating over the channel
+	//for {
+	//	res, ok := <-charChannel
+	//	if ok == false {
+	//		fmt.Println("Channel Close ", ok)
+	//		break
+	//	}
+	//	fmt.Println("Channel Open ", res, ok)
+	//}
 
 
 
