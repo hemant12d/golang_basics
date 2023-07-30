@@ -5,10 +5,8 @@ import (
 	"log"
 )
 
-
 // Alias the function type
 // Type piType func(int) Float64
-
 
 // Wrap logger function
 //func wrapLogger(fun piType, logger *log.Logger) piType {
@@ -35,14 +33,14 @@ func PI(n int) int {
 
 // Spawn a new go routine for each of the following iterations
 
-func main(){
+func main() {
 	// Calculate the approximatation of PI
 	//fmt.Println(PI(10000))
 	//fmt.Println(PI(50000))
-	fmt.Println("Starting...");
-	log.Println("Hello world!");
+	fmt.Println("Starting...")
+	log.Println("Hello world!")
 	log.Println("Server crashed :( ")
-	log.Println("Server got restarted :) ");
+	log.Println("Server got restarted :) ")
 
 }
 

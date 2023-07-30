@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"reflect"
+)
 
 type tank interface{
 	// Methods
@@ -10,7 +13,7 @@ type tank interface{
 
 type myvalue struct {
 	height float64
-	redius float64
+	radius float64
 }
 
 // the tank interface
@@ -31,4 +34,9 @@ func main() {
 	t = myvalue{10, 14}
 	fmt.Println("Area of tank :", t.Tarea())
 	fmt.Println("Volume of tank:", t.Volume())
+
+	fmt.Println("Type of tank :", reflect.TypeOf(myvalue{}))
+	fmt.Println("Type of tank :", reflect.TypeOf(t))
+	fmt.Println("Type of tank :", reflect.TypeOf(t.Tarea))
+
 }
