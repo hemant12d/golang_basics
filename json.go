@@ -5,7 +5,6 @@ import (
 	"fmt"
 )
 
-// Declare struct
 type Dev struct {
 	Name string `json: "name"`
 	Age int `json: "age"`
