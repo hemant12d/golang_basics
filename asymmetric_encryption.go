@@ -50,7 +50,15 @@ func verifySignature(message string, signature []byte, publicKey *rsa.PublicKey)
 
 	return true
 }
+func privateKeyToString(privKey *rsa.PrivateKey) (string) {
+	privKeyBytes, err := x509.MarshalPKCS8PrivateKey(privKey)
+	if err != nil {
+		return ""
+	}
 
+	privKeyPEM := pem.EncodeToMemory(&pem.Block{Type: "PRIVATE KEY", Bytes: privKeyBytes})
+	return string(privKeyPEM)
+}
 
 func main(){
 	privateKey, publicKey := generateKeyPair()
