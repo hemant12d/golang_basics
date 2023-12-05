@@ -31,5 +31,6 @@ func main()  {
 	}
 	fmt.Println(sto)
 	fmt.Printf("%T\n", sto)
+	fmt.Printf("%t\n", sto)
 	fmt.Printf("%s\n", sto)
 }
