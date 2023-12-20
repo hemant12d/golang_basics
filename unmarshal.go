@@ -75,7 +75,7 @@ func main() {
 
 	// printing decoded array
 	// values one by one
-	for i := range human2{
-		fmt.Println(human2[i])
+	for _, human := range human2{
+		fmt.Println(human)
 	}
 }
