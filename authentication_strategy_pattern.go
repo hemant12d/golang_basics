@@ -19,7 +19,7 @@ func main (){
 
 type JWTStrategy struct {}
 type ApiStrategy struct {}
-type shareKeyStrategy struct{}
+type ShareKeyStrategy struct{}
 
 func (svc *JWTStrategy) Authenticate(ctx context.Context, token []byte) (error) {
 	return nil
@@ -29,6 +29,6 @@ func (svc *ApiStrategy) Authenticate(ctx context.Context, token []byte) (error) 
 	return nil
 }
 
-func (svc *shareKeyStrategy) Authenticate(ctx context.Context, token []byte) (error) {
+func (svc *ShareKeyStrategy) Authenticate(ctx context.Context, token []byte) (error) {
 	return nil
 }
